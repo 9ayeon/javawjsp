@@ -8,7 +8,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-@WebServlet("/merong") //WebServlet = jsp의 컨트롤러,
+@WebServlet("/T2") //WebServlet = jsp의 컨트롤러,
 public class Test2 extends HttpServlet {
 	//private static final long serialVersionUID = 1L; // 직렬화, 코드를 물흐르듯
        

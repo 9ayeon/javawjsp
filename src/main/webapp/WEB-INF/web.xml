@@ -9,4 +9,93 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <!-- 윗줄 웰컴파일 순서위주, 아이피:포트/javawjsp/ 하면 index.jsp가 나옴 -->
+  <!-- Controller설정 -->
+  <!-- <servlet>
+    <servlet-name>test2</servlet-name>
+    <servlet-class>j1111.Test2</servlet-class>
+  </servlet>
+   		
+  <servlet-mapping>
+    <servlet-name>test2</servlet-name>
+    <url-pattern>/t2</url-pattern>
+  </servlet-mapping> -->
+  
+<!--   <servlet>
+  	<servlet-name>test2</servlet-name>
+  	<servlet-class>j1111.Test2</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test2</servlet-name>
+  	<url-pattern>/T2</url-pattern>
+  </servlet-mapping> -->
+  
+  <servlet>
+  	<servlet-name>test12</servlet-name> <!-- 별명지어주기 -->
+  	<servlet-class>j1111.Test12</servlet-class> <!-- 실제클래스 이름 -->
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>test12</servlet-name> <!-- 실제클래스이름,주소말고 별명을가져옴 -->
+  	<url-pattern>/test12Ok</url-pattern> <!-- 주소창,jsp파일에 액션란에 적은이름 -->
+  </servlet-mapping>
+  
+  <!-- 특정 서블릿에 초기값을 할당하기 -->
+  <!-- <servlet>
+  	<servlet-name>green</servlet-name>
+  	<servlet-class>j1117.Green</servlet-class> .java 생략, 경로지정(이 클래스를 생성해야함,할당한 값을 읽어와야함)
+  	<init-param>초기화시키는 파라메타의 변수와 값 적어줌
+  		<param-name>mid</param-name>
+  		<param-value>admin</param-value> 이 사이트에 접속시 어드민으로 사용시작
+  	</init-param>
+  	<init-param>
+  		<param-name>pwd</param-name>  비밀번호초기지정
+  		<param-value>1234</param-value>
+  	</init-param>
+  	<init-param>
+  		<param-name>className</param-name> 부서지정
+  		<param-value>인사과</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>  이 url에 접속시 위에 처리
+  	<servlet-name>green</servlet-name> 위에 적은 서블릿클래스(별명)
+  	<url-pattern>/Green</url-pattern> 컨트롤러,경로명,green(별명)을 찾아감.-> 클래스j1117.Green을 찾아서 아이디 비번 부서 값 할당해줌
+  </servlet-mapping> -->
+  
+  
+  <!-- 공통변수에 초기값 할당하기 -->
+  <context-param>
+  	<param-name>logoName</param-name>
+  	<param-value>Java Green Company</param-value>
+  </context-param>
+  <context-param>
+  	<param-name>homeAddress</param-name>
+  	<param-value>http://192.168.50.216:9090/javawjsp/</param-value>
+  </context-param>
+  
+  <!-- error페이지 설정하기 (하고나서 주석하셈) -->
+	<!-- <error-page>
+		<error-code>400</error-code>
+		<location>/study/1117/error/error400.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>404</error-code>
+		<location>/study/1117/error/error400.jsp</location>
+	</error-page>
+	
+	<error-page>
+		<error-code>500</error-code>
+		<location>/study/1117/error/error500.jsp</location>
+	</error-page> -->
+	
+	<!-- Filter 매핑처리 -->
+<!-- 	<filter>
+		<filter-name>encodingFilter</filter-name> 별명은 맨앞글자 소문자
+		<filter-class>filter.EncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>encodingFilter</filter-name> 별명은 맨앞글자 소문자
+		<url-pattern>/*</url-pattern> /* = 모든경로를 인코딩필터가 통과시키겠다
+	</filter-mapping> -->
+	
 </web-app>

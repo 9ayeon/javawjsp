@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>test11.jsp</title>
+  <title>test12.jsp</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -29,7 +29,11 @@
 <div class="container">
   <h2>회원가입 폼</h2>
 <!--   <form name="myform" method="post" action="../../test11Ok"> -->
-  <form name="myform" method="post" action="test11Ok.jsp">
+<!--   <form name="myform" method="post" action="../../t12"> -->
+<!--   <form name="myform" method="post" action="/javawjsp/t12"> -->
+  <!-- <form name="myform" method="post" action="<%=request.getContextPath()%>/t12"> -->
+  <!-- <form name="myform" method="post" action="test12Ok.jsp"> -->
+  <form name="myform" method="post" action="<%=request.getContextPath()%>/test12Ok">
   	성명 : <input type="text" name="name" value="Yang ga yeon" class="form-control"/>
   	나이 : <input type="number" name="age" value="27" class="form-control"/>
   	<div>
@@ -46,6 +50,10 @@
   	</div>
   	<input type="button" value="전송" onclick="fCheck()" class="btn btn-warning" />
   </form>
+  <hr/>
+  <p>
+  	<img src="../../images/1.jpg" width="300px" />
+  </p>
 </div>
 <p><br/></p>
 </body>
