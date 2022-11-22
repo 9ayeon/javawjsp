@@ -15,12 +15,14 @@
 
 <!-- 생성된 클래스에 값을 넣을때 : jsp:setProperty 태그 사용 -->
 <!-- vo클래스에 넘어온name을 넣겠다. (vo에 들어가있는 네임필드와 이름통일해야함) -->
-<jsp:setProperty property="name" name="vo"/> <!-- property=변수명(앞에서넘어온 필드명그대로?) name=클래스의 id -->
+<%-- <jsp:setProperty property="name" name="vo"/> <!-- property=변수명(앞에서넘어온 필드명그대로?) name=클래스의 id -->
 <jsp:setProperty property="gender" name="vo"/>
-<jsp:setProperty property="age" name="vo" value="25"/> <!-- vo값 무시하고 밸류에 있는 새 값으로 초기화시킴. -->
+<jsp:setProperty property="age" name="vo"/>
 <jsp:setProperty property="job" name="vo"/>
-<jsp:setProperty property="address" name="vo"/>
+<jsp:setProperty property="address" name="vo"/> --%>
 <!-- 생성된 클래스에 값을 꺼낼때 : jsp:getProperty -->
+<jsp:setProperty property="*" name="vo"/>
+<!-- *하나 넣으면 모든 변수 불러옴 -->
 
 <!DOCTYPE html>
 <html>

@@ -23,9 +23,9 @@ public class EncodingFilter implements Filter {
 		// 수행할 내용 작성
 		
 		// 전부 통과시키기
-		System.out.println("이곳은 Filter통과 전");//거르기 전에 실행할곳
+		//System.out.println("이곳은 Filter통과 전");//거르기 전에 실행할곳
 		chain.doFilter(request, response); //이상있으면 뒤로보내고, 없으면 통과
-		System.out.println("이곳은 Filter통과 후");//거ㅏ르고나서 실행할곳
+		//System.out.println("이곳은 Filter통과 후");//거ㅏ르고나서 실행할곳
 		
 	}
 	

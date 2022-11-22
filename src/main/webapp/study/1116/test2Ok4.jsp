@@ -1,4 +1,4 @@
-<%@page import="j1116.Test2VO"%>
+<%@page import="study.j1116.Test2VO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	 //vo를 담아온 변수이름(선언할때 이름은 객체명과 달라도됨) 적기

@@ -1,4 +1,4 @@
-<%@page import="j1116h_gayeon.Hw1115VO"%>
+<%@page import="study.j1116.Hw1115VO"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%
 	Hw1115VO vo = (Hw1115VO) request.getAttribute("vo");
